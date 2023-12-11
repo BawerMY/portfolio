@@ -1,0 +1,10 @@
+edit text height
+header bottom border fix
+
+maybe write interesets etc. like json and/or colored text (syntax hihlighted)
+
+you did not did the game box, do it using your css not copy paste
+
+a lot of problems with game square
+
+tabs nr problem fix
