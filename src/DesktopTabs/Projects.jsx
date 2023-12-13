@@ -2,13 +2,6 @@ import style from "../style";
 
 export default function Projects() {
     return (
-        <div className={`flex-auto flex`}>
-            <div className={`w-[311px] h border-r-[1px] border-[${style.colors.lines[0]}]`}>
-
-            </div>
-            <div className={`flex-auto`}>
-
-            </div>
-        </div>
+        <div className={`text-[${style.colors.secondary[0]}] m-4 h-full`}>comming soon...</div>
     )
 }

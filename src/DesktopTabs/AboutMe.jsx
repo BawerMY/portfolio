@@ -98,18 +98,20 @@ export default function AboutMe() {
     function RenderBody({doc}) {
         const docs = {
             about_me: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            high_school: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprexcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            high_school: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprexcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            email: "bawermy123@gmail.com",
+            phone: "+39 351 126 5059"
         }
         return <div className={`pt-[18px] min-w-full w-0 px-[38px] text-[${style.colors.secondary[0]}]`}>{docs[doc.body]}</div>
     }
 
 
     let finder = [
-        new Directory1("professional-info-icon", []),
+        new Directory1("professional-info-icon", [new Directory2("professional-info", true, [])]),
         new Directory1("personal-info-icon", [
             new Directory2("personal-info", true, [
                 new Directory3("bio", "bio-folder", true, [
-                    new Document("about-me", "document-icon", "about_me")
+                    new Document("about-me", "document-icon", "about_me"),
                 ]),
                 new Directory3("interests", "interests-folder", false, []),
                 new Directory3("education", "education-folder", false, [
@@ -117,11 +119,11 @@ export default function AboutMe() {
                 ])
             ]),
             new Directory2("contacts", true, [
-                new Document("bawermy123@gmail.com", "email-icon", ""),
-                new Document("+39 351 126 5059", "phone-icon", "")
+                new Document("bawermy123@gmail.com", "email-icon", "email"),
+                new Document("+39 351 126 5059", "phone-icon", "phone")
             ])
         ]),
-        new Directory1("hobbies-icon", [])
+        new Directory1("hobbies-icon", [new Directory2("hobbies", true, [])])
     ]
 
     function initializeTabs() {
