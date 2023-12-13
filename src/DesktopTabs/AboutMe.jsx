@@ -31,11 +31,12 @@ export default function AboutMe() {
                 {open && dir2.children.length !== 0 &&
                     <div className="pt-[18px] pb-[27px] flex flex-col gap-2">
                         {dir2.children.map((dir, i) => {
-                            switch (dir.constructor.name) {
-                                case "Directory3":
-                                    return <Render3 dir3={dir} i={i}/>
-                                default:
-                                    return <RenderDocument doc={dir} i={i} />
+                            if (dir.constructor.name === "Directory3") {
+                                return <Render3 dir3={dir} i={i} />
+                            }
+                            else {
+                                return <RenderDocument doc={dir} i={i} />
+
                             }
                         })}
                     </div>
