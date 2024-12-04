@@ -1,5 +1,5 @@
-import Mobile from "./Mobile";
-import Desktop from "./Desktop";
+import Mobile from "./Displays/Mobile";
+import Desktop from "./Displays/Desktop";
 function App() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? Mobile() : Desktop()
 }

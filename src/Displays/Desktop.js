@@ -1,10 +1,10 @@
-import style from "./style";
+import style from "../style";
 import { useState } from "react";
-import { SocialLogo } from "./Logos";
-import Hello from "./DesktopTabs/Hello";
-import AboutMe from "./DesktopTabs/AboutMe";
-import Projects from "./DesktopTabs/Projects";
-import ContactMe from "./DesktopTabs/ContactMe";
+import { SocialLogo } from "../Components/Logos";
+import Hello from "../DesktopTabs/Hello";
+import AboutMe from "../DesktopTabs/AboutMe";
+import Projects from "../DesktopTabs/Projects";
+import ContactMe from "../DesktopTabs/ContactMe";
 
 export default function Desktop() {
     const [tab, setTab] = useState(0)

@@ -1,6 +1,6 @@
 import style from "../style";
 import {useEffect, useState} from "react";
-import {SocialLogo} from "../Logos";
+import {SocialLogo} from "../Components/Logos";
 import docs from "../docs";
 
 export default function AboutMe() {
@@ -66,7 +66,8 @@ export default function AboutMe() {
     }
 
     function RenderBody({doc}) {
-        return <div className={`min-w-full w-0 text-[${style.colors.secondary[0]}]`}>{docs[doc.body]}</div>
+        // return <div className={`min-w-full w-0 text-[${style.colors.secondary[0]}]`}>{docs[doc.body]}</div>
+        return "shit"
 
     }
 
@@ -93,7 +94,7 @@ export default function AboutMe() {
         new Directory1("hobbies", false, []),
         new Directory1("contacts", false, [
             new Document("bawermy123@gmail.com", "email-icon", "email"),
-            new Document("+39 351 126 5059", "phone-icon", "phone")
+            new Document("+39 351 407 2169", "phone-icon", "phone")
         ]),
     ]
 

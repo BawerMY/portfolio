@@ -116,7 +116,7 @@ export default function AboutMe() {
             ]),
             new Directory2("contacts", true, [
                 new Document("bawermy123@gmail.com", "email-icon", "email"),
-                new Document("+39 351 126 5059", "phone-icon", "phone")
+                new Document("+39 351 407 2169", "phone-icon", "phone")
             ])
         ]),
         new Directory1("hobbies-icon", [new Directory2("hobbies", true, [])])

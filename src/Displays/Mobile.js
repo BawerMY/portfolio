@@ -1,8 +1,8 @@
-import style from "./style";
+import style from "../style";
 import {useState} from "react";
-import Hello from "./MoblieTabs/Hello";
-import {SocialLogo} from "./Logos";
-import AboutMe from "./MoblieTabs/AboutMe";
+import Hello from "../MoblieTabs/Hello";
+import {SocialLogo} from "../Components/Logos";
+import AboutMe from "../MoblieTabs/AboutMe";
 export default function Mobile() {
     const [tab, setTab] = useState(1)
     let lastTab = 1
